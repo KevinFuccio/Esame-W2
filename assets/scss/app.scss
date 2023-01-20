@@ -1,0 +1,110 @@
+@import "colors";
+header {
+  background-image: linear-gradient(to left, #555555, #000000);
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    img {
+      width: 200px;
+    }
+    a {
+      color: #fff;
+      font-size: 1.5em;
+      padding-left: 15px;
+    }
+  }
+}
+.main-title {
+  .image-bg {
+    position: relative;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 575px){
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.654);
+    border: 10px solid rgba(255, 255, 255, 0.507);
+    @media screen and (max-width: 1150px) {
+      width: 400px;
+
+    }
+    
+    @media (max-width: 575px){
+      background-color: transparent;
+      border: none;
+      color: $primary-color;
+      position:relative !important;
+      top: 0% !important;
+      left: 0% !important;
+      transform: none !important;
+    }
+    
+    div{
+      text-align: start;
+    }
+
+    h2 {
+      font-size: 64px;
+      @media screen and (max-width: 1150px) {
+        font-size: 36px;
+      }
+      @media screen and (max-width: 630px) {
+        font-size: 24px;
+  
+      }
+    }
+    .title-p {
+      display: flex;
+      p{
+        font-size: 24px;
+        font-weight: bold;
+        @media screen and (max-width: 1150px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 630px) {
+          font-size: 12px;
+    
+        }
+      }
+    }
+  }
+}
+article{
+  .container{
+    a{
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+.partners{
+  background-image: url(../img/sfondo.png);
+  background-position: 50%;
+  h2{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+  }
+}
+.products{
+  background-image: url(../img/sfondo.png);
+  background-position: 50%;
+  #carouselExample{
+    display: flex;
+    justify-content: center;
+    .carousel-inner{
+      width: 500px;
+    }
+  }
+}
